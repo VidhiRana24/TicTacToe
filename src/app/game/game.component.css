@@ -8,7 +8,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(245, 158, 158),
     #f4d7a2,
@@ -16,7 +16,7 @@
     #bae8ba,
     #a3a3e9,
     #dbb5f6
-  );
+  ); */
   height: 100vh;
 }
 
@@ -52,7 +52,7 @@ h1 {
   padding: 20px 0px;
   width: 100%;
   margin-right: 30px;
-  color: white;
+  color: black;
 }
 
 h2 {
