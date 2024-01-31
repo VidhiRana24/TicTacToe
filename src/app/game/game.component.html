@@ -1,0 +1,17 @@
+<div class="outer-container">
+  <h2 *ngIf="freshpage">Let's Play Tic-Tac-Toe</h2>
+  <h1 *ngIf="!winner && !isdraw && !freshpage">Current Player: {{ player }}</h1>
+  <h2 *ngIf="winner">Player {{ winner }} wins!</h2>
+
+  <h2 *ngIf="isdraw">Draw!!</h2>
+  <br /><br />
+  <button class="btn" (click)="newGame()">Start Game</button>
+  <br /><br />
+  <main *ngIf="!winner && !isdraw">
+    <app-board
+      *ngFor="let val of square; let i = index"
+      [value]="val"
+      (click)="makeMove(i)"
+    ></app-board>
+  </main>
+</div>

@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 158, 158),
+    #f4d7a2,
+    #f6f6b3,
+    #bae8ba,
+    #a3a3e9,
+    #dbb5f6
+  );
+  height: 100vh;
+}
+
+.btn {
+  width: 200px;
+  margin-left: 43%;
+  font-size: 19px;
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 0px;
+  justify-content: center;
+}
+
+app-board {
+  border: 1px solid rgb(57, 57, 57);
+  height: 150px;
+}
+
+h1 {
+  text-align: right;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 20px 0px;
+  width: 100%;
+  margin-right: 30px;
+  color: white;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
